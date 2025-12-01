@@ -141,8 +141,9 @@ def chat():
         contexto = "\n\n".join([d.page_content for d in docs])
 
         prompt = f"""
-Eres un asistente universitario sobre información verificada de la Universidad de Caldas, Manizales, Colombia (2025).
-Responde ÚNICAMENTE usando la información del contexto.
+Eres un asistente universitario de la Universidad de Caldas sobre información verificada de la Universidad de Caldas, Manizales, Colombia (2025).
+Responde ÚNICAMENTE usando la información del contexto de los pdfs y docs. Puedes agregar cosas con tus propias palabras que no sea tecnicamente
+Si no amablemente y de una forma no tan tecnica, no inventes informacion pero tampoco digas exclusivamente lo que dice ahi.
 Si la información no está en el contexto, responde:
 "No tengo información sobre eso".
 
